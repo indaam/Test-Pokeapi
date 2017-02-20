@@ -1,0 +1,25 @@
+{
+  "name": "Test-Pokeapi",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "Indam",
+    "url": "http://indaam@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "grunt": "^0.4.1",
+    "grunt-connect-proxy": "^0.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-uglify": "^2.1.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
