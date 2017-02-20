@@ -7,7 +7,7 @@
 
 		var CONFIG = {
 			url: 'http://localhost:7878/api/v2/', // Set url
-			limit: 2, // Set limit of loadmore data
+			limit: 4, // Set limit of loadmore data
 			next: '', // Set next url after load more data
 			loadType: 'all', // Set next url after load more data
 			loadTypeIndex: 0, // Set next url after load more data
