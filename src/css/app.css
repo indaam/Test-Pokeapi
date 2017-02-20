@@ -1,0 +1,30 @@
+/* line 4, ../sass/app.scss */
+body { margin: 0 6% 20px; font-size: 14px; }
+
+/* line 10, ../sass/app.scss */
+.table > tbody > tr > td { vertical-align: middle; }
+/* line 13, ../sass/app.scss */
+.table th { text-align: center; }
+/* line 16, ../sass/app.scss */
+.table td { text-transform: capitalize; }
+/* line 19, ../sass/app.scss */
+.table .table { margin-bottom: 0; text-align: center; font-size: 90%; }
+/* line 26, ../sass/app.scss */
+.table.no-padding > tbody > tr > td { padding: 0; }
+
+/* line 32, ../sass/app.scss */
+.pk-detail { position: fixed; width: 50%; right: 0; z-index: 1; top: 0; }
+
+/* line 40, ../sass/app.scss */
+.pk-img { position: relative; -moz-transition: 0.6s; -o-transition: 0.6s; -webkit-transition: 0.6s; transition: 0.6s; -moz-transform-style: preserve-3d; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; position: relative; }
+/* line 45, ../sass/app.scss */
+.pk-img img { display: block; position: relative; -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; backface-visibility: hidden; -moz-transition: 0.6s; -o-transition: 0.6s; -webkit-transition: 0.6s; transition: 0.6s; -moz-transform-style: preserve-3d; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -moz-transform: rotateY(0deg); -ms-transform: rotateY(0deg); -webkit-transform: rotateY(0deg); transform: rotateY(0deg); top: 0; left: 0; }
+/* line 55, ../sass/app.scss */
+.pk-img .img-back { position: absolute; left: 0; top: 0; -moz-transform: rotateY(-180deg); -ms-transform: rotateY(-180deg); -webkit-transform: rotateY(-180deg); transform: rotateY(-180deg); }
+/* line 61, ../sass/app.scss */
+.pk-img .img-front { -moz-transform: rotateY(0deg); -ms-transform: rotateY(0deg); -webkit-transform: rotateY(0deg); transform: rotateY(0deg); z-index: 2; }
+
+/* line 70, ../sass/app.scss */
+.table tr:hover .pk-img .img-back { -moz-transform: rotateY(0deg); -ms-transform: rotateY(0deg); -webkit-transform: rotateY(0deg); transform: rotateY(0deg); }
+/* line 73, ../sass/app.scss */
+.table tr:hover .pk-img .img-front { -moz-transform: rotateY(-180deg); -ms-transform: rotateY(-180deg); -webkit-transform: rotateY(-180deg); transform: rotateY(-180deg); }

@@ -1,2 +1,78 @@
 @charset "UTF-8";
 @import "compass";
+
+body{
+	margin: 0 6% 20px;
+	font-size: 14px;
+}
+
+.table{
+	& > tbody > tr > td{
+		vertical-align : middle;
+	}
+	th{
+		text-align: center;
+	}
+	td{
+		text-transform: capitalize;
+	}
+	.table{
+		margin-bottom: 0;
+		text-align: center;
+		font-size: 90%;
+	}
+
+	&.no-padding{
+		& > tbody > tr > td{
+			padding: 0;
+		}
+	}
+}
+
+.pk-detail{
+	position: fixed;
+	width: 50%;
+	right: 0;
+	z-index: 1;
+	top: 0;
+}
+
+.pk-img{
+	position: relative;
+	@include transition(0.6s);
+	@include transform-style(preserve-3d);
+    position: relative;
+	img{
+		display: block;
+		position: relative;
+		@include backface-visibility(hidden);
+		@include transition(0.6s);
+		@include transform-style(preserve-3d);
+		@include transform(rotateY(0deg));
+		top: 0;
+		left: 0;
+	}
+	.img-back{
+		position: absolute;
+		left: 0;
+		top: 0;
+		@include transform(rotateY(-180deg));
+	}
+	.img-front{
+		@include transform(rotateY(0deg));
+		z-index: 2;
+	}
+}
+
+.table{
+	tr:hover{
+		.pk-img{
+			.img-back{
+				@include transform(rotateY(0deg));
+			}
+			.img-front{
+				@include transform(rotateY(-180deg));
+			}
+		}
+	}
+}
